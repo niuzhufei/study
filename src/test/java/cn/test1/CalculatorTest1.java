@@ -31,6 +31,7 @@ public class CalculatorTest1 {
         Object[][] sub = {
                 {6,4,2},
                 {2,0,2},
+                {-2,-1,-1},
                 {-2,-1,-1}
         };
         return sub;
