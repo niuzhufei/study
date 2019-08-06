@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="calculator">
+        <groups>
+            <define name="All">
+                <include name="additionTest"/>
+                <include name="subtractionTest"/>
+                <include name="mulTest"/>
+                <include name="remainderTest"/>
+            </define>
+            <run>
+                <include name="subtractionTest"/>
+                <include name="mulTest"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="cn.test1.CalculatorTest1">
+                <!--<methods>-->
+                <!--<include name=""-->
+                <!--<include name=""-->
+
+                <!--</methods>-->
+            </class>
+            <class name="cn.test1.CalculatorTest2"/>
+            <class name="cn.test1.CalculatorTest3"/>
+            <class name="cn.test1.CalculatorTest4"/>
+        </classes>
+
+    </test>
+</suite>
