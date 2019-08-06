@@ -12,10 +12,10 @@ public class CalculatorTest1 {
         //方法入参和期望值
         Object[][] add = {
                 {1,2,3},
+                {-1,-2,-3},
                 {-1,-2,-3}
         };
         return add;
-
     }
     @Test(groups = "additionTest",dataProvider = "addition")
     public void additionTest(int x,int y,int expectResult){
@@ -24,8 +24,4 @@ public class CalculatorTest1 {
         int result = calculator.addition(x,y);
         Assert.assertEquals(result,expectResult);
     }
-
-
-
-
 }
