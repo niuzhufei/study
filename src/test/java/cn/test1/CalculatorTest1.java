@@ -26,22 +26,6 @@ public class CalculatorTest1 {
     }
 
 
-    @DataProvider(name = "subtraction")
-    public Object[][] getSubtractionPara(){
-        Object[][] sub = {
-                {6,4,2},
-                {2,0,2},
-                {-2,-1,-1},
-                {-2,-1,-1}
-        };
-        return sub;
-    }
 
-    @Test(groups = "subtractionTest",dataProvider ="subtraction" )
-    public void subtractionTest(int x,int y,int expectResult){
-        Calculator calculator = new CalculatorImpl();
-        int result = calculator.subtraction(x,y);
-        Assert.assertEquals(result,expectResult);
-    }
 
 }
