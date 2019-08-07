@@ -22,6 +22,7 @@ public class CalculatorTest1 {
         //从getAdditionPara方法返回的二维数组中获取的测试用例
         Calculator calculator = new CalculatorImpl();
         int result = calculator.addition(x,y);
+        System.out.print("result="+result);
         Assert.assertEquals(result,expectResult);
     }
 }
