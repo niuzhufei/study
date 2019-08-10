@@ -20,7 +20,7 @@ public class CalculatorTest3 {
     public void mulTest(int x,int y,int expectResult){
         Calculator calculator = new CalculatorImpl();
         int result = calculator.multiplication(x,y);
-        System.out.print("result="+result);
+        System.out.println("result="+result);
         Assert.assertEquals(result,expectResult);
     }
 }
